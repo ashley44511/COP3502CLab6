@@ -1,6 +1,7 @@
 # Python Lab 6
 # Author: Ashley Maurer
 #test 3
+#test 2:58
 if __name__ == "__main__":
     option = -1
     while option != 3:
