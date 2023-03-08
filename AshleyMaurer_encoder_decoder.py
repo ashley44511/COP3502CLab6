@@ -1,7 +1,7 @@
 # Python Lab 6
 # Author: Ashley Maurer
 #
-#import decode
+import decode
 
 def encode(password): #Author: Maurer
     #encodes password by adding 3 to each digit in password
@@ -18,13 +18,12 @@ if __name__ == "__main__": #Author: Ashley Maurer
             encoded_pass = encode(orig_pass)
             print("Your password has been encoded and stored!\n")
         elif option == 2: #Author: Ashley Maurer
-            pass
             #decodes password (decode function to be added later)
-            #decoded_pass = decode.decode(encoded_pass)
-            #print("The encoded password is ", end="")
-            #for i in encoded_pass: 
-                #print(f"{i}", end="")
-            #print(", and the original password is ", end="")
-            #for i in decoded_pass: 
-                #print(f"{i}", end="")
-            #print(".\n")
+            decoded_pass = decode.decode(encoded_pass)
+            print("The encoded password is ", end="")
+            for i in encoded_pass: 
+                print(f"{i}", end="")
+            print(", and the original password is ", end="")
+            for i in decoded_pass: 
+                print(f"{i}", end="")
+            print(".\n")
